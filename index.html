@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👤<br> User Registration Form</h1>
+        <p> Fill your Details to  create an account</p>
+             <div class="click">
+            <a href="users.html" style="text-decoration: none; padding: 10px;" >View All Users</a>
+            </div>
+        <hr>
+
+        <form id="registrationForm">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="john" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"placeholder="wwww@gmail.com" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="2353546757" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="no xxx street" required></textarea>
+            </div>
+            <div>
+                <label for="notes">Date of birth</label><br>
+                <input id="notes" name="notes" rows="2" type="date" class="big-date"></input>
+            </div>
+             
+            
+            <button type="submit" class="submit-btn">Register User</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

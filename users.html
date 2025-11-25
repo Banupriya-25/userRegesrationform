@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+        <h1>📋 Registered Users List</h1>
+        <p>Go to <a href="index.html" style="text-decoration: none;">Registration Form</a> to add a new user.</p>
+        
+        <hr>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Date of Birth</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userListBody">
+                </tbody>
+        </table>
+    </div>
+
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Update User Details</h2>
+            <form id="updateForm">
+                <input type="hidden" id="updateUserId">
+                <div>
+                    <label for="updateFullName">Full Name</label>
+                    <input type="text" id="updateFullName" name="fullName" required>
+                </div>
+                <div>
+                    <label for="updateEmail">Email</label>
+                    <input type="email" id="updateEmail" name="email" required>
+                </div>
+                <div>
+                    <label for="updatePhoneNumber">Phone Number</label>
+                    <input type="text" id="updatePhoneNumber" name="phoneNumber" required>
+                </div>
+                <div>
+                    <label for="updateAddress">Address</label>
+                    <textarea id="updateAddress" name="address" rows="3" required></textarea>
+                </div>
+                <div>
+                    <label for="updateNotes">Date of Birth</label>
+                    <input id="updateNotes" name="notes" rows="2"><input/>
+                </div>
+                <button type="submit" class="submit-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

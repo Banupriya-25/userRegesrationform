@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+background: linear-gradient(to right, #c74ffe, #254791);
+
+}
+
+.container {    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fdf8fc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.container2{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fdf8fc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.click{
+    background-color: #fcfafa;
+    border: solid grey 1px;
+    width: 150px;
+    height: 30px;
+    margin-left: 35%;
+    padding-top: 15px;
+    padding-left: 20px;
+
+    
+    border-radius: 5px;
+
+    
+}
+.click2{
+    background-color: #fcfafa;
+    border: solid grey 1px;
+    width: 135px;
+    height: 30px;
+    margin-left: 35%;
+    padding-top: 15px;
+    padding-left: 35px;
+    margin-top: 20px;
+
+    
+    border-radius: 5px;
+
+}
+
+p{
+text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #7b22ce;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.big-date {
+  height: 30px;       /* increase height*/
+  font-size: 16px;
+  width: 100%;
+
+}
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color:#7b22ce;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* User List Styling */
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#userTable th,
+#userTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#userTable th {
+    background-color: #7b22ce;
+    color: white;
+    border-radius: 5px;
+}
+.main{
+    width: 500px;
+    height: 350px;
+    margin-top: 12%;
+    margin-left: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+
+.update-btn {
+    background-color: #2ce6d6;
+    color: white;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #eb5b5b;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #1e737e;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
+}
+
+/* Modal/Popup for Update */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
