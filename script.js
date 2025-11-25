@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/users'; 
+const API_URL = 'https://userregesrationform.onrender.com/api/users'; 
 
 
 const fetchUsersAndRender = () => {
@@ -220,3 +220,4 @@ if (updateForm) {
 
 
 window.onload = fetchUsersAndRender;
+
