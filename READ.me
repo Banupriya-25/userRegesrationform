@@ -1,0 +1,106 @@
+# 👤 User Management System
+
+This project is a simple web application designed to demonstrate basic **CRUD (Create, Read, Update, Delete)** operations for user data.
+
+---
+
+## 📷 Content Descriptions (Mandatory "Screenshots")
+
+Since live screenshots cannot be provided here, the following are detailed descriptions of the content required for the mandatory visuals.
+
+### 1. User Registration Form (`form.html`)
+The form provides input fields for creating a new user record.
+
+| Element | Description |
+| :--- | :--- |
+| **Fields** | **Name**, **Email**, **Password**, **Confirm Password** (Text/Input fields) |
+| **Buttons** | **Register/Submit** button (Primary action) and a **Reset** button. |
+| **Validation** | Expected client-side validation for mandatory fields and password matching. |
+
+
+### 2. User List Page with Update/Delete (`users.html`)
+This page displays all registered users in a table and provides actions for modification.
+
+| Column/Element | Functionality |
+| :--- | :--- |
+| **Table Headers** | User ID, Name, Email, Action |
+| **User Data** | Displays a row for each registered user. |
+| **Update Button** | A button (or icon) next to each user that redirects to an edit form. |
+| **Delete Button** | A button (or icon) next to each user that sends a `DELETE` request to the backend. |
+
+
+### 3. Database Table where Data is Stored (Schema Description)
+The expected structure for the user data persistence layer (e.g., MySQL or MongoDB collection structure).
+
+| Column Name | Data Type (Example: MySQL) | Description |
+| :--- | :--- | :--- |
+| `id` | `INT` (Primary Key, Auto-Increment) | Unique identifier for the user record. |
+| `name` | `VARCHAR(255)` | Full name of the user. |
+| `email` | `VARCHAR(255)` (Unique) | Unique email address of the user. |
+| `password_hash` | `VARCHAR(255)` | Hashed and salted password for security. |
+| `created_at` | `TIMESTAMP` | Timestamp when the user was registered. |
+
+---
+
+## 📚 Technical Documentation
+
+### Tech Stack Used
+This project is built using a standard **Full-Stack architecture**.
+
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Frontend (Client)** | **HTML5, CSS3, JavaScript** | Handles the UI, data rendering, and client-side validation. |
+| **Backend (Server)** | Assumed **Node.js with Express.js** (or similar framework) | Provides the REST API and handles business logic. |
+| **Database (Data)** | Assumed **MongoDB** or **MySQL/PostgreSQL** | Stores all user records. |
+
+
+[Image of a full-stack web application architecture diagram]
+
+
+### API Endpoints
+The backend exposes standard **RESTful API** endpoints for managing the `/users` resource.
+
+| HTTP Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| **POST** | `/api/users` | Registers a new user. (Create) |
+| **GET** | `/api/users` | Retrieves a list of all registered users. (Read) |
+| **PUT** | `/api/users/:id` | Updates an existing user's details. (Update) |
+| **DELETE** | `/api/users/:id` | Deletes a user record by ID. (Delete) |
+
+### How to Run the Project
+
+The steps below assume a typical Node.js backend setup.
+
+#### **Prerequisites**
+* **Node.js** and **npm/yarn** installed.
+* A running **Database** instance (e.g., MongoDB or MySQL server).
+
+#### **Setup Steps**
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [REPOSITORY_URL]
+    cd userRegesrationform
+    ```
+
+2.  **Configure Environment Variables (Backend):**
+    * Create a `.env` file in the backend directory.
+    * Set your database connection string and application port (e.g., `PORT=3000`, `DATABASE_URL=...`).
+
+3.  **Install Dependencies:**
+    Navigate to the backend folder (if applicable) and install modules.
+    ```bash
+    cd backend
+    npm install
+    ```
+
+4.  **Start the Backend Server:**
+    Run the server using the designated start command.
+    ```bash
+    npm start
+    # The API will be available at http://localhost:3000
+    ```
+
+5.  **Run the Frontend:**
+    * Open the `index.html` file in your web browser.
+    * **Note:** For a full-stack application, using a local server (like `live-server` or a web server extension) is recommended to properly handle API requests.
