@@ -46,11 +46,11 @@ Backend provides complete CRUD API at:
 
 ## 📂 Project Structure
 
-- server.js -> Backend API (CRUD)
+- server.js -> Backend API 
 - firebase-config.js -> Firebase Admin setup
-- serviceAccountKey.json -> Firebase private key (DO NOT UPLOAD)
+- serviceAccountKey.json -> Firebase private key 
 - main.html -> Home page
-- index.html -> Registration page (Add users)
+- index.html -> Registration page 
 - users.html -> User list (View/Update/Delete)
 - script.js -> All frontend logic + API calls
 - style.css -> Styling for all pages
